@@ -17,3 +17,4 @@ Thomas PIET
 
 4.b -> docker build . -t my-nginx
 
+  c -> Je remarque que c'est plus rapide pour tester en environnement dev d'utiliser l'exemple 4. Je pense que l'environnement avec le Dockerfile est plus approprié pour de la prod.
