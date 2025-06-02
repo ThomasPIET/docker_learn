@@ -18,3 +18,9 @@ Thomas PIET
 4.b -> docker build . -t my-nginx
 
   c -> Je remarque que c'est plus rapide pour tester en environnement dev d'utiliser l'exemple 4. Je pense que l'environnement avec le Dockerfile est plus approprié pour de la prod.
+
+5.a -> docker network create shit-network
+      
+       docker run --name mysql-container --network shit-network -e MYSQL_ROOT_PASSWORD=my-secret-pw -d mysql:8.0
+
+       docker run --name my-phpmyadmin --network shit-network -e PMA_HOST=mysql-container -p 8081:80 -d phpmyadmin/phpmyadmin  (port 8081 car le port 8080 est déjà utilisé par le site en 8080	)
