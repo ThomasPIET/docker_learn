@@ -15,3 +15,5 @@ Thomas PIET
   f -> docker run --name my-nginx -p 8080:80 -d nginx && docker cp ./html/index.html my-nginx:/usr/share/nginx/html/index.html
 
 
+4.b -> docker build . -t my-nginx
+
